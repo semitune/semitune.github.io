@@ -1,0 +1,64 @@
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Microsite */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111;
+  color: white;
+}
+
+h1 {
+  margin: 4rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2, p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.row {
+  margin: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 2rem;
+  padding: 5rem;
+  background: #1a1a1a;
+  color: white;
+  border-radius: 2rem;
+}
+
+.icon {
+  width: 8rem;
+  height: 8rem;
+}
+
+.play {
+  width: 17rem;
+}
