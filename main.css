@@ -75,7 +75,7 @@ strong {
 .tagline {
   font-size: 0.75rem;
   text-transform: uppercase;
-  color: #12DF9A;
+  color: #92FFFF;
   letter-spacing: 0.15rem;
   margin: 1rem;
 }
@@ -102,6 +102,7 @@ strong {
 header {
   display: flex;
   margin: 1rem 1rem 0;
+  align-items: center;
 }
 
 @media (min-width: 800px) {
@@ -111,8 +112,8 @@ header {
 }
 
 .logo {
-  width: 231px;
-  height: 19.33px;
+  width: 115.5px;
+  height: 21.75px;
 }
 
 @media (min-width: 800px) {
@@ -152,6 +153,7 @@ section:nth-child(even) {
 .menu-button {
   width: 15px;
   height: 15px;
+  margin: 0.5rem;
   margin-left: auto;
 }
 
@@ -167,7 +169,7 @@ section:nth-child(even) {
   padding: 1rem 4rem;
   color: #050505;
   font-weight: 600;
-  background-color: #12DF9A;
+  background-color: #5CFFFF;
   border-radius: 3px;
 }
 
