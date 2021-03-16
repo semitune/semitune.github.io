@@ -123,6 +123,28 @@ header {
   }
 }
 
+nav {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  nav a {
+    margin: 0 1em;
+    font-size: 1.3rem;
+  }
+}
+
+nav > a:last-child {
+  margin-right: 0;
+}
+
 /* Sections */
 section {
   display: flex;
