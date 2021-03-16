@@ -110,6 +110,18 @@ header {
   }
 }
 
+.logo {
+  width: 231px;
+  height: 19.33px;
+}
+
+@media (min-width: 800px) {
+  .logo {
+    width: 154px;
+    height: 29px;
+  }
+}
+
 /* Sections */
 section {
   display: flex;
@@ -138,7 +150,15 @@ section:nth-child(even) {
 
 /* Buttons */
 .menu-button {
+  width: 15px;
+  height: 15px;
   margin-left: auto;
+}
+
+@media (min-width: 800px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .button {
