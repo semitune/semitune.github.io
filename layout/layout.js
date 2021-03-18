@@ -4,7 +4,7 @@ window.onload = async () => {
     const content = await response.text();
     const parser = new DOMParser();
     const html = parser.parseFromString(content, "text/html");
-    return html.firstChild;
+    return html.querySelector(name);
   };
   const body = document.body;
   body.insertBefore(await getTemplate("header"), body.firstChild);
@@ -12,14 +12,14 @@ window.onload = async () => {
 };
 
 window.onresize = () => {
-  const menu = document.getElementsByClassName("menu")[0];
+  const menu = document.querySelector(".menu");
   menu.style.display = null;
 }
 
 const toggleMenu = () => {
-  const menu = document.getElementsByClassName("menu")[0];
-  const visible = menu.style.display === "flex";
-  menu.style.display = visible ? "none" : "flex";
-  const menuButton = document.getElementsByClassName("menu-button")[0];
-  menuButton.textContent = visible ? "☰" : "✕";
+  const menu = document.querySelector(".menu");
+  const open = menu.style.display === "flex";
+  menu.style.display = open ? "none" : "flex";
+  const menuButton = document.querySelector(".menu-button");
+  menuButton.firstChild.src = open ? "./images/menu.svg" : "./images/close.svg";
 }

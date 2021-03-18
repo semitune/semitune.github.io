@@ -5,6 +5,10 @@ body {
   color: #151515;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -18,12 +22,20 @@ a {
   font-weight: bold;
 }
 
+.row {
+  display: flex;
+}
+
 .header {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
   max-width: 1000px;
+}
+
+.logo {
+  z-index: 2;
 }
 
 .menu {
@@ -41,38 +53,113 @@ a {
   display: none;
 }
 
-@media (max-width: 800px) {
-  .menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.medium-section, .large-section {
+  max-width: 600px;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.large-section {
+  max-width: 1000px;
+  text-align: left;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/instruments.svg");
+  background-size: cover;
+  background-position-x: center;
+  height: 400px;
+  border-top: 1px solid #ddd;
+}
+
+.cta-heading {
+  margin-right: 5rem;
+}
+
+.large {
+  font-size: 2rem;
+}
+
+.extra-large {
+  font-size: 3rem;
+}
+
+.loud {
+  font-size: 1.4rem;
+  opacity: 0.8;
+  margin-bottom: 4rem;
+}
+
+.button, .secondary-button {
+  border: none;
+  background: #151515;
+  color: white;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+}
+
+.secondary-button {
+  background: #ccc;
+  color: #151515;
+}
+
+.promo-video {
+  margin: 5rem 0;
+}
+
+.card {
+  background: #eee;
+  margin: 2rem 2rem 2rem 0;
+  padding: 2rem 3rem;
+  border-radius: 5px;
+  max-width: 12rem;
+}
+
+.footer {
+  padding: 2rem;
+  background: #f1f1f1;
+}
+
+.footer .logo {
+  margin: 2rem;
+}
+
+.footer-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.footer-links > * {
+  margin: 0.5rem 0;
+  font-weight: normal;
+}
+
+.footer-heading {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .header {
     flex-direction: column;
-    padding: 2rem;
-    background: white;
   }
 
-  .menu a {
-    font-size: 1.3rem;
-    margin-left: 0;
-    padding: 2rem 0;
-    border-bottom: 1px solid #ddd;
+  .menu {
+    margin: 2rem 0 0;
   }
 
-  .menu a:last-child {
-    border: none;
+  .row {
+    flex-direction: column;
   }
 
-  .menu-button {
-    display: block;
-    margin-left: auto;
-    border: none;
-    background: none;
-    font-size: 26px;
-    z-index: 1;
-    outline: none;
-    cursor: pointer;
+  .cta-heading {
+    margin-right: 0;
   }
 }
