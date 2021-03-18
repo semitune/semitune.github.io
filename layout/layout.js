@@ -11,15 +11,8 @@ window.onload = async () => {
   body.appendChild(await getTemplate("footer"));
 };
 
-window.onresize = () => {
-  const menu = document.querySelector(".menu");
-  menu.style.display = null;
-}
-
-const toggleMenu = () => {
-  const menu = document.querySelector(".menu");
-  const open = menu.style.display === "flex";
-  menu.style.display = open ? "none" : "flex";
-  const menuButton = document.querySelector(".menu-button");
-  menuButton.firstChild.src = open ? "./images/menu.svg" : "./images/close.svg";
+const toggleLightbox = () => {
+  const lightbox = document.querySelector(".lightbox");
+  const visible = lightbox.style.display === "flex";
+  lightbox.style.display = visible ? "none" : "flex";
 }

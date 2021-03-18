@@ -21,9 +21,15 @@
         <a href="https://play.google.com/store/apps/details?id=com.semitune.pegboard" class="button">
           Download Now
         </a>
-        <button class="secondary-button">Watch Video</button>
+        <button class="secondary-button" onclick="toggleLightbox()">
+          Watch Video
+        </button>
       </div>
     </section>
+    <div class="lightbox">
+      <button class="lightbox-close" onclick="toggleLightbox()">×</button>
+      <iframe width="1000" height="563" src="https://www.youtube.com/embed/eh_0rW7_QmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <div class="ticker" id="products">
       <div class="ticker-content">
           We're an independent studio based out of Vancouver, BC. Here's our current lineup:
