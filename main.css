@@ -56,38 +56,70 @@ a {
 
 .masthead {
   background: #e8fdff;
-  padding: 4rem;
+  padding: 8rem 0;
+}
+
+.ticker {
+  padding: 1rem;
+  background: #151515;
+  color: white;
+  font-weight: bold;
+}
+
+.ticker-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ticker-action {
+  float: right;
+  margin-left: auto;
 }
 
 .product {
-  background: #e9ffe8;
+  max-width: 1000px;
+  margin: 5rem auto;
+  border: 5px solid #151515;
 }
 
 .product-overtone {
-  background: #f7e8ff;
+  border-style: dashed;
+  opacity: 0.5;
 }
 
 .product-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 4rem 0;
+  padding: 2rem 3rem;
   display: flex;
   align-items: center;
+}
+
+.product h2 {
+  font-size: 1.2rem;
+}
+
+.product p {
+  opacity: 0.5;
 }
 
 .product-action {
   margin-left: auto;
 }
 
+.app-icon {
+  width: 64px;
+  height: 64px;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
 .cta {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("images/instruments.svg");
+  background: #fff url("images/instruments.svg");
   background-size: cover;
   background-position-x: center;
   height: 400px;
-  border-top: 1px solid #ddd;
 }
 
 .cta-heading {
@@ -119,12 +151,8 @@ a {
 }
 
 .secondary-button {
-  background: #c6d8da;
+  background: #cfe2e4;
   color: #151515;
-}
-
-.promo-video {
-  margin: 5rem 0;
 }
 
 .footer {
