@@ -15,6 +15,12 @@ a {
   font-weight: bold;
 }
 
+.underlined {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 5px solid #151515;
+}
+
 .notice {
   background-color: #ffeb3b;
   padding: 1rem;
@@ -61,7 +67,6 @@ a {
 .masthead {
   background: #e8fdff;
   padding: 6rem 0 12rem;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .ticker {
@@ -166,6 +171,26 @@ a {
   padding: 5rem 8rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
+}
+
+.questions {
+  font-size: 1.4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.questions-list {
+  margin: 4rem 0;
+}
+
+.questions-q {
+  font-weight: bold;
+  padding: 1rem 0;
+  border-bottom: 5px solid #151515;
+}
+
+.questions-a {
+  margin: 2rem 0 4rem;
 }
 
 .footer {
