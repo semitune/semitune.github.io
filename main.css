@@ -20,26 +20,11 @@ a {
   text-decoration: underline
 }
 
-.underlined {
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
-  border-bottom: 5px solid #151515;
-}
-
 .notice {
   background-color: #ffeb3b;
   padding: 1rem;
   text-align: center;
   font-weight: bold;
-}
-
-.row {
-  display: flex;
-}
-
-.constrain {
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .landing .header {
@@ -52,10 +37,6 @@ a {
   padding: 2rem;
   max-width: 1000px;
   margin: 0 auto;
-}
-
-.logo {
-  z-index: 2;
 }
 
 .menu {
@@ -72,6 +53,21 @@ a {
 .masthead {
   background: #e8fdff;
   padding: 6rem 0 12rem;
+}
+
+.masthead-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.masthead-heading {
+  font-size: 3rem;
+}
+
+.masthead-copy {
+  font-size: 1.4rem;
+  opacity: 0.8;
+  margin-bottom: 4rem;
 }
 
 .lightbox {
@@ -121,7 +117,7 @@ a {
   border: 5px solid #151515;
 }
 
-.product-overtone {
+.disabled-product {
   border-style: dashed;
   opacity: 0.5;
 }
@@ -132,51 +128,23 @@ a {
   align-items: center;
 }
 
-.product h2 {
-  font-size: 1.2rem;
-}
-
-.product p {
-  opacity: 0.5;
-}
-
-.product-action {
-  margin-left: auto;
-}
-
-.app-icon {
+.product-icon {
   width: 64px;
   height: 64px;
   margin-right: 1rem;
   border-radius: 10px;
 }
 
-.cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff url("images/instruments.svg");
-  background-size: cover;
-  background-position-x: center;
-  height: 400px;
+.product-heading {
+  font-size: 1.2rem;
 }
 
-.cta-heading {
-  margin-right: 5rem;
+.product-description {
+  opacity: 0.5;
 }
 
-.large {
-  font-size: 2rem;
-}
-
-.extra-large {
-  font-size: 3rem;
-}
-
-.loud {
-  font-size: 1.4rem;
-  opacity: 0.8;
-  margin-bottom: 4rem;
+.product-action {
+  margin-left: auto;
 }
 
 .button, .secondary-button {
@@ -202,6 +170,12 @@ a {
   padding: 5rem 8rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
+}
+
+.document-heading {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 5px solid #151515;
 }
 
 .questions {
@@ -244,14 +218,4 @@ a {
 .footer a {
   color: white;
   font-size: 0.9rem;
-}
-
-@media (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
-
-  .cta-heading {
-    margin-right: 0;
-  }
 }
