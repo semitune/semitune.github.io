@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Semitune - Software for music industry professionals</title>
     <link rel="stylesheet" href="main.css" />
-    <link rel="icon" href="favicon.png" />
-    <script type="text/javascript" src="./layout/layout.js"></script>
+    <script type="text/javascript">
+      const toggleLightbox = () => {
+        const lightbox = document.querySelector(".lightbox");
+        const visible = lightbox.style.display === "flex";
+        lightbox.style.display = visible ? "none" : "flex";
+        document.body.style.overflow = visible ? "auto" : "hidden";
+      };
+    </script>
   </head>
   <body class="landing">
     <noscript>
@@ -14,6 +20,17 @@
         This site requires JavaScript to render properly.
       </div>
     </noscript>
+    <header class="header">
+      <div class="header-content">
+        <a href="/">
+          <img src="./images/semitune-logo.svg" class="logo" alt="Semitune logo" />
+        </a>
+        <nav class="menu">
+          <a href="/#products">Products</a>
+          <a href="/support">Support</a>
+        </nav>
+      </div>
+    </header>
     <section class="masthead">
       <div class="masthead-content">
         <h1 class="masthead-heading">Pegboard Mobile Synth</h1>
@@ -73,5 +90,16 @@
         <a href="/support" class="ticker-action">Contact us →</a>
       </div>
     </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="/">
+          <img src="./images/semitune-logo.svg" class="logo" alt="Semitune logo" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.semitune.pegboard">Download Pegboard</a>
+        <a href="/support">Support</a>
+        <a href="https://twitter.com/semituned">Twitter</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+    </footer>
   </body>
 </html>
