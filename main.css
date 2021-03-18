@@ -26,12 +26,17 @@ a {
   display: flex;
 }
 
+.constrain {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .header {
   display: flex;
   align-items: center;
-  margin: 0 auto;
   padding: 1rem 2rem;
   max-width: 1000px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -49,19 +54,29 @@ a {
   margin-left: 3rem;
 }
 
-.menu-button {
-  display: none;
+.masthead {
+  background: #e8fdff;
+  padding: 4rem;
 }
 
-.medium-section, .large-section {
-  max-width: 600px;
-  margin: 5rem auto;
-  text-align: center;
+.product {
+  background: #e9ffe8;
 }
 
-.large-section {
+.product-overtone {
+  background: #f7e8ff;
+}
+
+.product-content {
   max-width: 1000px;
-  text-align: left;
+  margin: 0 auto;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.product-action {
+  margin-left: auto;
 }
 
 .cta {
@@ -104,7 +119,7 @@ a {
 }
 
 .secondary-button {
-  background: #ccc;
+  background: #c6d8da;
   color: #151515;
 }
 
@@ -112,49 +127,29 @@ a {
   margin: 5rem 0;
 }
 
-.card {
-  background: #eee;
-  margin: 2rem 2rem 2rem 0;
-  padding: 2rem 3rem;
-  border-radius: 5px;
-  max-width: 12rem;
+.footer {
+  padding: 4rem;
+  background: #151515;
 }
 
-.footer {
-  padding: 2rem;
-  background: #f1f1f1;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .footer .logo {
-  margin: 2rem;
+  filter: invert(1);
 }
 
-.footer-links {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-}
-
-.footer-links > * {
-  margin: 0.5rem 0;
-  font-weight: normal;
-}
-
-.footer-heading {
-  text-transform: uppercase;
-  font-weight: bold;
+.footer a {
+  color: white;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-  }
-
-  .menu {
-    margin: 2rem 0 0;
-  }
-
   .row {
     flex-direction: column;
   }
