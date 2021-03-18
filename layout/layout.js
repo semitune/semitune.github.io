@@ -15,4 +15,5 @@ const toggleLightbox = () => {
   const lightbox = document.querySelector(".lightbox");
   const visible = lightbox.style.display === "flex";
   lightbox.style.display = visible ? "none" : "flex";
+  document.body.style.overflow = visible ? "auto" : "hidden";
 }

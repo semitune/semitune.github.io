@@ -28,7 +28,7 @@
     </section>
     <div class="lightbox" onclick="toggleLightbox()">
       <button class="lightbox-close">×</button>
-      <iframe width="1000" height="563" src="https://www.youtube.com/embed/eh_0rW7_QmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="1000" height="563" src="https://www.youtube.com/embed/eh_0rW7_QmM" class="lightbox-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="ticker" id="products">
       <div class="ticker-content">
@@ -38,10 +38,12 @@
     <div class="products">
       <div class="product product-pegboard">
         <div class="product-content">
-          <img src="./images/pegboard-icon.png" alt="Pegboard icon" class="product-icon" />
-          <div>
-            <h2 class="product-heading">Pegboard</h2>
-            <p class="product-description">Subtractive synthesizer with an isomorphic keyboard.</p>
+          <div class="product-info">
+            <img src="./images/pegboard-icon.png" alt="Pegboard icon" class="product-icon" />
+            <div>
+              <h2 class="product-heading">Pegboard</h2>
+              <p class="product-description">Subtractive synthesizer with an isomorphic keyboard.</p>
+            </div>
           </div>
           <div class="product-action">
             <a href="https://play.google.com/store/apps/details?id=com.semitune.pegboard" class="button">
@@ -52,13 +54,15 @@
       </div>
       <div class="product disabled-product">
         <div class="product-content">
-          <img src="./images/overtone-icon.png" alt="Overtone icon" class="product-icon" />
-          <div>
-            <h2 class="product-heading">Overtone</h2>
-            <p class="product-description">Chord progression step sequencer and harmony tool.</p>
+          <div class="product-info">
+            <img src="./images/overtone-icon.png" alt="Overtone icon" class="product-icon" />
+            <div>
+              <h2 class="product-heading">Overtone</h2>
+              <p class="product-description">Chord progression step sequencer and harmony tool.</p>
+            </div>
           </div>
           <div class="product-action">
-            <button class="button">Coming Soon</button>
+            <a href="javascript:void(0)" class="button">Coming Soon</a>
           </div>
         </div>
       </div>
