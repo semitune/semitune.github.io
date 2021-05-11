@@ -7,21 +7,8 @@
     <title>Semitune - Software for music industry professionals</title>
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="stylesheet" href="main.css" />
-    <script type="text/javascript">
-      const toggleLightbox = () => {
-        const lightbox = document.querySelector(".lightbox");
-        const visible = lightbox.style.display === "flex";
-        lightbox.style.display = visible ? "none" : "flex";
-        document.body.style.overflow = visible ? "auto" : "hidden";
-      };
-    </script>
   </head>
   <body class="landing">
-    <noscript>
-      <div class="notice">
-        This site requires JavaScript to render properly.
-      </div>
-    </noscript>
     <header class="header">
       <div class="header-content">
         <a href="/">
@@ -40,15 +27,8 @@
         <a href="https://play.google.com/store/apps/details?id=com.semitune.pegboard" class="button">
           Free Download
         </a>
-        <button class="secondary-button" onclick="toggleLightbox()">
-          Watch Video
-        </button>
       </div>
     </section>
-    <div class="lightbox" onclick="toggleLightbox()">
-      <button class="lightbox-close">×</button>
-      <iframe width="1000" height="563" src="https://www.youtube.com/embed/eh_0rW7_QmM" class="lightbox-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
     <div class="ticker" id="products">
       <div class="ticker-content">
           We're an independent app studio based out of Vancouver, BC. Here's our current lineup:
