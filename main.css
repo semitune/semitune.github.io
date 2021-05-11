@@ -191,6 +191,11 @@ a {
   color: #151515;
 }
 
+.disabled-button {
+  opacity: 0.5;
+  cursor: default;
+}
+
 .document {
   max-width: 1000px;
   margin: 5rem auto 0;
